@@ -78,10 +78,10 @@ function game_started(){
 function messageWin(){
 	var winner = "Congraturations! Winner is: ";
 	if(turn == 1){
-		winner += "O";
+		winner += "X";
 	}
 	else{
-		winner += "X";
+		winner += "O";
 	}
 	return winner
 }
@@ -233,7 +233,7 @@ function play(){
 				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
 				document.getElementById("move_text_id").value = "";
 				board_state[i] = turn;
-				winner()
+				win()
 				toggle_move()
 				n = 1;
 				break;
@@ -245,7 +245,7 @@ function play(){
 				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
 				document.getElementById("move_text_id").value = "";
 				board_state[i] = turn;
-				winner()
+				win()
 				toggle_move()
 				n = 1;
 				break;
