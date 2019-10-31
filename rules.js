@@ -75,6 +75,61 @@ function game_started(){
 	return this.started
 }
 
+function messageWin(){
+	var winner = "Congraturations! Winner is: ";
+	if(turn == 1){
+		winner += "O";
+	}
+	else{
+		winner += "X";
+	}
+	return winner
+}
+
+// Decides who is the winner!!!
+function win(){
+	if(turn == board_state[0] && turn == board_state[1] && turn == board_state[2]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[3] && turn == board_state[4] && turn == board_state[5]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[6] && turn == board_state[7] && turn == board_state[8]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[1] && turn == board_state[4] && turn == board_state[7]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[0] && turn == board_state[3] && turn == board_state[6]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[2] && turn == board_state[4] && turn == board_state[6] ){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[0] && turn == board_state[4] && turn == board_state[8]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+	else if(turn == board_state[2] && turn == board_state[5] && turn == board_state[8]){
+		alert(messageWin())
+		reset_play()
+		return;
+	}
+}
+
 
 
 
@@ -163,104 +218,49 @@ The method should do all the things as stated in rule 2.
 8. After all the moves have exhausted, you're not required to display any message. (It should be obvious to Reset play.)<br/>
 
 */
-// function play(){
-// 	if (started == false){
-// 		alert("Game didn't start yet")
-// 		return
-// 	}
-// 	var n = 0;
-// 	for (i = 0; i < table_ids.length; i++){
-// 		if(document.getElementById("move_text_id").value == table_ids[i] && board_state[i] == -1){
-// 			if (turn == 1){
-// 				var nextTurn = "O";
-// 				var lastTurn = nextTurn.bold();
-// 				document.getElementById(document.getElementById("move_text_id").value).innerHTML = "X";
-// 				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
-// 				document.getElementById("move_text_id").value = "";
-// 				board_state[i] = turn;
-// 				winner()
-// 				toggle_move()
-// 				n = 1;
-// 				break;
-// 			}
-// 			else{
-// 				var nextTurn = "X";
-// 				var lastTurn = nextTurn.bold();
-// 				document.getElementById(document.getElementById("move_text_id").value).innerHTML = "O";
-// 				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
-// 				document.getElementById("move_text_id").value = "";
-// 				board_state[i] = turn;
-// 				winner()
-// 				toggle_move()
-// 				n = 1;
-// 				break;
-// 			}
-// 		}
-// 		else if ((table_ids[i] == document.getElementById("move_text_id").value)&& board_state[i] != -1 ){
-// 			alert("Invalid. Pick different box.")
-// 			document.getElementById("move_text_id").value = "";
-// 			return
-// 		}
-// 	}
-// 	if (n == 0){
-// 		alert("Alert! Pick the correct box ** Case Sensitive **")
-// 		document.getElementById("move_text_id").value = "";
-// 	}
-// }
-function play()
-{
-if (started == false)
-{
-alert("The game has not started!")
-return
-}
-var notFound = 0;
-var tempAnswer = document.getElementById("move_text_id").value;
-for (i = 0; i < table_ids.length; i++)
-{
-if(tempAnswer == table_ids[i] && board_state[i] == -1)
-{
-if (turn == 1)
-{
-var whoseturn = "O";
-var finalTurn = whoseturn.bold();
-document.getElementById(tempAnswer).innerHTML = "X";
-document.getElementById("turn_info").innerHTML = "Turn for " + finalTurn;
-document.getElementById("move_text_id").value = "";
-board_state[i] = turn;
-winner()
-toggle_move()
-notFound = 1;
-break;
-}
-else
-{
-var whoseturn = "X";
-var finalTurn = whoseturn.bold();
-document.getElementById(tempAnswer).innerHTML = "O";
-document.getElementById("turn_info").innerHTML = "Turn for " + finalTurn;
-document.getElementById("move_text_id").value = "";
-board_state[i] = turn;
-winner()
-toggle_move()
-notFound = 1;
-break;
-}
-}
-else if (tempAnswer == table_ids[i] && board_state[i] != -1)
-{
-alert("Invalid move! Pick a different box!")
-document.getElementById("move_text_id").value = "";
-return
-}
-
-}
-if (notFound == 0)
-{
-alert("Please pick the correct box ** Case Sensitive **")
-document.getElementById("move_text_id").value = "";
-}
-
+function play(){
+	if (started == false){
+		alert("Game didn't start yet")
+		return
+	}
+	var n = 0;
+	for (i = 0; i < table_ids.length; i++){
+		if(document.getElementById("move_text_id").value == table_ids[i] && board_state[i] == -1){
+			if (turn == 1){
+				var nextTurn = "O";
+				var lastTurn = nextTurn.bold();
+				document.getElementById(document.getElementById("move_text_id").value).innerHTML = "X";
+				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
+				document.getElementById("move_text_id").value = "";
+				board_state[i] = turn;
+				winner()
+				toggle_move()
+				n = 1;
+				break;
+			}
+			else{
+				var nextTurn = "X";
+				var lastTurn = nextTurn.bold();
+				document.getElementById(document.getElementById("move_text_id").value).innerHTML = "O";
+				document.getElementById("turn_info").innerHTML = "Turn for " + lastTurn;
+				document.getElementById("move_text_id").value = "";
+				board_state[i] = turn;
+				winner()
+				toggle_move()
+				n = 1;
+				break;
+			}
+		}
+		else if ((table_ids[i] == document.getElementById("move_text_id").value)&& board_state[i] != -1 ){
+			alert("Invalid. Pick different box.")
+			document.getElementById("move_text_id").value = "";
+			return
+		}
+	}
+	if (n == 0){
+		alert("Alert! Pick the correct box ** Case Sensitive **")
+		document.getElementById("move_text_id").value = "";
+	}
 }
 
 /*
