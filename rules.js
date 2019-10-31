@@ -75,6 +75,8 @@ function game_started(){
 	return this.started
 }
 
+
+
 function messageWin(){
 	var winner = "Congraturations! Winner is: ";
 	if(turn == 1){
