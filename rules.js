@@ -196,7 +196,7 @@ function play(){
 				break;
 			}
 		}
-		else if ((table_ids[i] == document.getElementById("move_text_id").value)&& board_state[i] != -1 ){
+		else if (document.getElementById("move_text_id").value == table_ids[i] && board_state[i] != -1){
 			alert("Invalid. Pick different box.")
 			document.getElementById("move_text_id").value = "";
 			return
