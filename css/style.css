@@ -8751,3 +8751,19 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.standard-line-break.-centered {
+        margin-left: auto;
+        margin-right: auto;
+}
+.standard-line-break {
+    margin: 0 0 24px;
+    margin: 0 0 1.5rem;
+    width: 40px;
+    width: 2.5rem;
+    height: 4px;
+    height: .25rem;
+    color: #000;
+    background-color: #000;
+    border: 0;
+}
