@@ -481,7 +481,8 @@ pre {
   margin-left: auto; }
 
 .standard-line-break.-centered {
-          margin-right: auto;
+          margin-left: auto;
+          /* margin-right: auto; */
   }
   .standard-line-break {
       margin: 0 0 24px;
