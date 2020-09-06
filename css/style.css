@@ -161,7 +161,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Montserrat";
+  font-family: monospace, monospace;
   font-size: 1em; }
 
 pre {
