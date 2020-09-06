@@ -499,6 +499,9 @@ pre {
    color:#ccb78f;
    /* text-decoration: underline; */
  }
+ .visit a:hover{
+   color:#ccb78f;
+ }
 .media-body code.info {
     color: #fff;
     padding: 2px 4px;
