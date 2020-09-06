@@ -498,6 +498,7 @@ pre {
 .media-body code.info {
     color: #fff;
     background-color: #1890ff;
+    border-radius: 4px;
 }
 .row {
   display: -webkit-box;
