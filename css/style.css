@@ -497,7 +497,7 @@ pre {
   } */
  .project_link a:hover{
    color:#ccb78f;
-   /* text-decoration: underline; */
+   text-decoration: underline;
  }
  .visit a:hover{
    color:#ccb78f;
