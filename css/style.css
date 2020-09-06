@@ -499,11 +499,11 @@ pre {
    color:#ccb78f;
    text-decoration: underline;
  }
- .visit a:hover{
+ /* .visit a:hover{
    color:#ffffff;
    background-color:#ccb78f;
    border-radius: 4px;
- }
+ } */
 .media-body code.info {
     color: #fff;
     padding: 2px 4px;
