@@ -497,6 +497,7 @@ pre {
   }
 .media-body code.info {
     color: #fff;
+    padding: 12px 20px;
     background-color: #1890ff;
     border-radius: 4px;
 }
