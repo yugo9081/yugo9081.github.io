@@ -500,7 +500,9 @@ pre {
    text-decoration: underline;
  }
  .visit a:hover{
-   color:#ccb78f;
+   color:#ffffff;
+   background-color:#ccb78f;
+   border-radius: 4px;
  }
 .media-body code.info {
     color: #fff;
