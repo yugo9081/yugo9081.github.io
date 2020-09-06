@@ -497,6 +497,7 @@ pre {
   } */
  a:hover{
    color:#ccb78f;
+   text-decoration: underline;
  }
 .media-body code.info {
     color: #fff;
