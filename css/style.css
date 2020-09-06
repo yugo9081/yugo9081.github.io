@@ -495,7 +495,7 @@ pre {
       background-color: #000;
       border: 0;
   } */
- a.project_link:hover{
+ .project_link a:hover{
    color:#ccb78f;
    text-decoration: underline;
  }
