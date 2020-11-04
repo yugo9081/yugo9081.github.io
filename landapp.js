@@ -17,6 +17,9 @@ class App {
     for(let i=0; i< this.total; i++){
       this.items[i] = new Dialog();
     }
+
+    var snd = new Audio("page.wav"); // buffers automatically when created
+    snd.play();
     window.addEventListener('resize', this.resize.bind(this), false);
     this.resize();
 
