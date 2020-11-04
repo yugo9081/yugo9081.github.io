@@ -57,9 +57,14 @@ class App {
       this.items[i].animate(this.ctx);
     }
 
+    //포스트잇 위에 클릭할때마다 빨간 점 생성
     if(this.curItem){
       this.ctx.fillStyle = `#ff4338`;
       this.ctx.strokeStyle = `#ff4338`;
+
+      this.ctx.beginPath();
+      this.ctx.arc(this.mousePos.x, this.mousePos.y, 8, 0, Math.PI * 2);
+      this.ctx.fill();
 
       this.ctx.beginPath();
       this.ctx.arc(this.curItem.centerPos.x, this.curItem.centerPos.y, 8, 0, Math.PI * 2);

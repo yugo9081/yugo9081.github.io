@@ -37,6 +37,7 @@ export class Dialog {
 
     this.centerPos = this.pos.clone().add(this.mousePos);
 
+    //포스트잇 옮기기
     ctx.beginPath();
     ctx.fillStyle = `#f4e55a`;
     ctx.fillRect(this.pos.x, this.pos.y, WIDTH, HEIGHT);
