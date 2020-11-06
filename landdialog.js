@@ -4,8 +4,8 @@ const FOLLOW_SPEED = 0.08;
 const ROTATE_SPEED = 0.12;
 const MAX_ANGLE = 30;
 const FPS = 1000 /60;
-const WIDTH = 150;
-const HEIGHT = 150;
+const WIDTH = 200;
+const HEIGHT = 200;
 
 export class Dialog {
   constructor() {
