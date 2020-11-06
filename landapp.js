@@ -18,8 +18,6 @@ class App {
       this.items[i] = new Dialog();
     }
 
-    var snd = new Audio("page.wav"); // buffers automatically when created
-    snd.play();
     window.addEventListener('resize', this.resize.bind(this), false);
     this.resize();
 
