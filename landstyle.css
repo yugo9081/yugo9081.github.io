@@ -36,8 +36,10 @@ p{
 }
 
 a{
+  top: 80%
   bottom: 10%;
   left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "IBM Plex Mono", sans-serif;
   display: inline-block;
   position: relative;
