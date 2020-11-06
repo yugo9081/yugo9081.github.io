@@ -10,12 +10,30 @@
 </head>
 <body>
 <script type="module" src="landapp.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
 
+      $('#neonthis').novacancy({
+
+        'reblinkProbability' : 0.3,
+        'blinkMin' : 0.1,
+        'blinkMax' : 0.2,
+        'loopMin' : 1,
+        'loopMax' : 2,
+        'color' : 'red',
+        'glow' : ['0 0 80px red', '0 0 30px red', '0 0 6px red'],
+        'off' : 2,
+        'blink' : 0,
+        'autoOn' : true
+      });
+    });
+  </script>
   <div class="neon-text">
     <p id="neonthis">
-          &nbsp;&nbsp;who's<br>
-          Yubin<br>
-          &nbsp;?<br>
+          &nbsp;&nbsp;who<br>
+          made<br>
+          &nbsp;the<br>
+          &nbsp;&nbsp;rules<br>
     </p>
   </div>
   <!-- <button onclick="location.href='https://yugo9081.github.io/index.html'" type="button">

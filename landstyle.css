@@ -27,3 +27,10 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+p{
+  font-size: 72px;
+  font-family: "IBM Plex Mono", sans-serif;
+  color: #fff;
+  font-weight: lighter;
+}
