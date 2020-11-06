@@ -26,6 +26,8 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  display: table;
+  text-align: center;
 }
 
 p{
@@ -33,4 +35,10 @@ p{
   font-family: "IBM Plex Mono", sans-serif;
   color: #fff;
   font-weight: lighter;
+}
+
+a{
+  font-family: "IBM Plex Mono", sans-serif;
+  display: table-cell;
+  vertical-align: bottom;
 }
